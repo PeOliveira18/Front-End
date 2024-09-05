@@ -1,0 +1,11 @@
+@media screen and (max-width: 1024px) {
+    h1 , p{
+        color: rgb(251,5,219);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 , p{
+        color: rgb(222, 5, 251);
+    }
+}

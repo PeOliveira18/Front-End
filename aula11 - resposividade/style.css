@@ -1,0 +1,22 @@
+bod{
+    background-color: grey;
+}
+
+main{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 800px;
+    margin: 0 auto;
+
+    max-width: 800px;
+}
+
+img{
+    width: 100%;
+}
+
+h1, p{
+    color: greenyellow;
+}
+
