@@ -2,6 +2,7 @@
 
 let inputMessage = document.getElementById("message")
 
+
 //DIV ONDE IREI EXIBIR AS MENSAGENS DO USUARIO E DO ASSISTENTE
 let chatLog = document.getElementById("chat-log")
 
@@ -43,4 +44,16 @@ form.addEventListener("submit", (event) => {
             messages
         })
     }).then(res => res.json())
+    .then(data => {;
+        console.log(data.chat_completion);
+        let messageElement = document.createElement("div")
+        messageElement.classList.add("message")
+        messageElement.classList.add("message--assistant")
+        messageElement.innerHTML = `
+        <div class="message__text">${data.chat_completion}</div>
+    `
+    chatLog.appendChild(messageElement)
+        
+    
+    })
 })
